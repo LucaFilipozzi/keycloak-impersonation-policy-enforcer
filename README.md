@@ -18,7 +18,7 @@
 
 This project provides a [Keycloak][keycloak] browser authenticator that
 enforces an impersonation policy restricting impersonators from access
-service providers (clients) unless holding a client role.
+service providers (clients) unless holding an associated client role.
 
 ## usage
 
@@ -28,7 +28,32 @@ Copy `keycloak-impersionation-policy-enforcer-«version».ear` to `${KEYCLOAK_HO
 
 ### configuration
 
-TODO
+#### client configuration
+
+1. Create an authentication flow as follows (or equivalent):
+
+   | auth type                     |                        | requirement |             |            |               |
+   | ----------------------------- | ---------------------- | ----------- | ----------- | ---------- | ------------- |
+   | Impersonation Policy Enforcer |                        | ◯ REQUIRED  | ● ALTERNATE | ◯ DISABLED |               |
+   | Identity Provider Redirector  |                        | ◯ REQUIRED  | ● ALTERNATE | ◯ DISABLED |               |
+   | Forms                         |                        | ◯ REQUIRED  | ● ALTERNATE | ◯ DISABLED | ◯ CONDITIONAL |
+   |                               | Username Password Form | ● REQUIRED  |             |            |               |
+
+2. Apply it to a client.
+
+3. Create a client role that is composed with the `realm-management-impersonation` role.
+
+### policy enforcement
+
+The _Impersonation Policy Enforcer_ authenticator replaces the _Cookie_ authenticator provided by
+Keycloak. It checks whether the user is being impersonated and, if so, whether the impersonator has
+any client role that is composed with the `realm-management.impersonation` role. If both conditions
+are met, the impersonator is granted access to the client.
+
+Without the client role, the impersonator is denied access to the client.
+
+If the user is not being impersonated, then grant or deny access just as the _Cookie_ authenticator
+would.
 
 ## development
 
