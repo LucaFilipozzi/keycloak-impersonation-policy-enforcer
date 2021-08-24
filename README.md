@@ -17,7 +17,7 @@
 # keycloak-impersonation-policy-enforcer
 
 This project provides a [Keycloak][keycloak] browser authenticator that
-enforces an impersonation policy restricting impersonators from access
+enforces an impersonation policy restricting impersonators from accessing
 service providers (clients) unless holding an associated client role.
 
 ## usage
