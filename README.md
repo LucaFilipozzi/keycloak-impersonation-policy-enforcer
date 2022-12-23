@@ -6,10 +6,6 @@
 [![analyze][analyze-img]][analyze-url]
 [![dependabot][dependabot-img]][dependabot-url]
 
-[![languages][languages-img]][languages-url]
-[![alerts][alerts-img]][alerts-url]
-[![code quality][code-quality-img]][code-quality-url]
-
 [![lines of code][lines-of-code-img]][lines-of-code-url]
 [![maintainability][maintainability-img]][maintainability-url]
 [![technical debt][technical-debt-img]][technical-debt-url]
@@ -98,13 +94,6 @@ Copyright 2021 Luca Filipozzi. Some rights reserved. See [LICENSE][license-url].
 [build-url]: https://github.com/LucaFilipozzi/keycloak-impersonation-policy-enforcer/actions/workflows/build.yml
 [dependabot-img]: https://badgen.net/github/dependabot/LucaFilipozzi/keycloak-impersonation-policy-enforcer?icon=dependabot
 [dependabot-url]: https://github.com/LucaFilipozzi/keycloak-impersonation-policy-enforcer/network/dependencies
-
-[languages-img]: https://badgen.net/lgtm/langs/g/LucaFilipozzi/keycloak-impersonation-policy-enforcer?icon=lgtm
-[languages-url]: https://lgtm.com/projects/g/LucaFilipozzi/keycloak-impersonation-policy-enforcer/logs/languages/lang:java
-[alerts-img]: https://badgen.net/lgtm/alerts/g/LucaFilipozzi/keycloak-impersonation-policy-enforcer/java?icon=lgtm
-[alerts-url]: https://lgtm.com/projects/g/LucaFilipozzi/keycloak-impersonation-policy-enforcer/alerts
-[code-quality-img]: https://badgen.net/lgtm/grade/g/LucaFilipozzi/keycloak-impersonation-policy-enforcer/java?icon=lgtm
-[code-quality-url]: https://lgtm.com/projects/g/LucaFilipozzi/keycloak-impersonation-policy-enforcer/context:java
 
 [lines-of-code-img]: https://badgen.net/codeclimate/loc/LucaFilipozzi/keycloak-impersonation-policy-enforcer?icon=codeclimate
 [lines-of-code-url]: https://codeclimate.com/github/LucaFilipozzi/keycloak-impersonation-policy-enforcer
